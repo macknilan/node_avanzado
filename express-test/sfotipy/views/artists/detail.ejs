@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= artist.name %></title>
+</head>
+<body>
+	<h1><%= artist.name %></h1>
+	<h2>Albums</h2>
+	<ul>
+		<% artist.albums.forEach(function(album){ %>
+			<li><%= album.year%> - <%=album.title%></li>
+		<% }) %>
+		
+	</ul>
+
+	<h2>Shows</h2>
+	<ul>
+			<% artist.shows.forEach(function(show){ %>
+			<li><%= show.city%></li>
+		<% }) %>
+	</ul>
+</body>
+</html>

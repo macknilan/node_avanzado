@@ -8,7 +8,7 @@
 	<h1>Artista</h1>
 	<ul>
 		<% artists.forEach(function(artist){	%>
-			<li><%=artist.name%></li>
+			<li><a href="artists/<%=artist._id%>"><%=artist.name%></a></li>
 		<% }) %>
 	</ul>
 </body>
